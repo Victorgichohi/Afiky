@@ -1,0 +1,70 @@
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+ 
+}
+body{
+   overflow-y: scroll;
+  overflow-x: hidden;
+}
+.row{
+  margin: 0 !important;
+}
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+/*****************************************
+
+Afiki Logo
+
+****************************************/
+#logo {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+}
+
+/*****************************************
+
+HEADER SECTION
+
+****************************************/
+
+.header{
+  height: 100vh;
+  width: 100%;
+  background: 
+  url(../assets/img/imagetab.jpg);
+  background-size: cover;
+}
+.intro_name{
+  margin-top: 20%;
+  margin-bottom: 2%;
+}
+.intro_name h1{
+  font-size: 19pt;
+  font-weight: bolder;
+  text-align: center;
+  color:black;
+  font-family: 'Inconsolata','Roboto', sans-serif;
+}
+.intro_text h4{
+  color: black;
+  font-size: 15pt;
+  font-weight: 100;
+  font-family: 'Inconsolata','Roboto', sans-serif;
+}
+.redtext{
+  color: red;
+}
