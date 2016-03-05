@@ -103,13 +103,125 @@ HEADER SECTION
 
 /*****************************************
 
-ABOUT SECTION
+services SECTION
 
 ****************************************/
-.about{
+.services{
   height: 100vh;
 }
+.services h3{
+  text-align: center;
+  color:rgb(65, 65, 65);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  font-size: 1.4rem;
+}
+.services hr{
+  width: 20%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.services h1{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+.web_mobi{
+  height: 80vh;
+}
+.web_mobi h1{
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(52, 49, 54);
+}
+.web_mobi p{
+  font-weight: 300;
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(62, 69, 80);
+}
+.web{
+  height: 40vh;
+  /*border: 2px solid black;*/
+  transition: border-color 300ms;
+  border: 1px solid transparent;
+}
+.webimage{
+  margin: 10px 0 10px 0;
+  height: 40vh;
+  /*border: 1px solid yellow;*/
+  background-image: url(../assets/img/webdesign2.jpg);
+  background-size: contain;
+}
+.mobile{
+  height: 40vh;
+  /*border: 2px solid black;*/
 
+}
+.mobileimage{
+  margin: 10px 0 10px 0;
+  height: 40vh;
+  /*border: 1px solid yellow;*/
+  background-image: url(../assets/img/mobiledev.png);
+  background-size: contain;
+}
+.ui_ux{
+  height: 40vh;
+  /*border: 2px solid black;*/
+}
+.uximage{
+  margin: 10px 0 10px 0;
+  height: 40vh;
+  /*border: 1px solid yellow;*/
+  background-image: url(../assets/img/uxdesign.jpg);
+  background-size: contain;
+}
+
+.bottomdiv{
+  height: 2vh;
+  width: 100%;
+  background-color:rgb(113, 176, 22);
+  transition: all .2s ease;
+}
+.bottomdiv p {
+  font-weight: lighter;
+  font-size: 2rem;
+  font-family: 'Indie Flower', cursive;
+  padding-top: 20px;
+  padding-left: 5px;
+  color: white;
+  display: none;
+}
+.web:hover{
+  border-color:rgb(113, 176, 22);
+}
+.web:hover .bottomdiv{
+  height: 15vh;
+}
+.web:hover .bottomdiv p{
+  display: block;
+}
+
+.mobile:hover{
+  border: 1px solid rgb(113, 176, 22);
+}
+.mobile:hover .bottomdiv{
+  height: 15vh;
+}
+.mobile:hover .bottomdiv p{
+  display: block;
+}
+
+.ui_ux:hover{
+  border: 1px solid rgb(113, 176, 22);
+}
+.ui_ux:hover .bottomdiv{
+  height: 15vh;
+}
+.ui_ux:hover .bottomdiv p{
+  display: block;
+}
 /*****************************************
 
 TEAM SECTION
