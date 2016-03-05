@@ -1,0 +1,20 @@
+.nairobicity{
+	height: 60vh;
+  	width: 100%;
+  	background: 
+  	url(../assets/img/sunset.jpg);
+  	background-size: cover;
+}
+.timer{
+	width: 100%;
+	padding-top: 100px;
+}
+.timer h5{
+	color: white;
+	font-size: 3rem;
+	font-weight: normal;
+	font-family: "Circular Std Book",sans-serif;
+}
+.timer hr{
+	width: 100%;
+}
