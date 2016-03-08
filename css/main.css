@@ -100,6 +100,54 @@ HEADER SECTION
 
 }
 
+/*****************************************
+
+About Us SECTION
+
+****************************************/
+.about{
+  height: 100vh;
+
+}
+.about_text{
+  margin: 10px 0 20px 0;
+  padding: 0px;
+}
+.about_text h3{
+  text-align: left;
+  color:rgb(65, 65, 65);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  font-size: 1.4rem;
+
+}
+
+.definition{
+  margin-bottom: 30px;
+}
+.definition p{
+  font-family: times, Times New Roman, times-roman, georgia, serif;
+  color: #444;
+  font-size: 51px;
+	line-height: 44px;
+	letter-spacing: -2px;
+  font-weight: bold;;
+}
+
+.vision p{
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  letter-spacing: 2px;
+  line-height: 30px;
+  font-weight: 900;
+  color: rgb(71, 69, 71);
+}
+.red{
+  font-size: 35px;
+  font-family: times, Times New Roman, times-roman, georgia, serif;
+  color: red;
+  font-weight: bold;
+}
 
 /*****************************************
 
@@ -109,18 +157,17 @@ services SECTION
 .services{
   height: 100vh;
 }
-.services h3{
-  text-align: center;
+.services_text{
+  margin: 10px 0 10px 0;
+}
+.services_text h3{
+  text-align: left;
   color:rgb(65, 65, 65);
   font-family: 'Raleway', sans-serif;
   font-weight: 900;
   font-size: 1.4rem;
 }
-.services hr{
-  width: 20%;
-  text-align: center;
-  margin-bottom: 20px;
-}
+
 .services h1{
   font-family: 'Open Sans', sans-serif;
   font-weight: 500;
@@ -195,6 +242,7 @@ services SECTION
 }
 .web:hover{
   border-color:rgb(113, 176, 22);
+
 }
 .web:hover .bottomdiv{
   height: 15vh;
@@ -224,52 +272,6 @@ services SECTION
 }
 /*****************************************
 
-About Us SECTION
-
-****************************************/
-.aboutus{
-  height: 100vh;
-}
-.aboutus h3{
-  text-align: center;
-  color:rgb(65, 65, 65);
-  font-family: 'Raleway', sans-serif;
-  font-weight: 900;
-  font-size: 1.4rem;
-}
-.aboutus hr{
-  width: 20%;
-  text-align: center;
-  margin-bottom: 20px;
-}
-.definition{
-  margin-bottom: 30px;
-}
-.definition p{
-  font-family: times, Times New Roman, times-roman, georgia, serif;
-  color: #444;
-  font-size: 51px;
-	line-height: 44px;
-	letter-spacing: -2px;
-  font-weight: bold;;
-}
-
-.vision p{
-  font-family: 'Raleway', sans-serif;
-  font-size: 30px;
-  letter-spacing: 2px;
-  line-height: 30px;
-  font-weight: 900;
-  color: rgb(71, 69, 71);
-}
-.red{
-  font-size: 35px;
-  font-family: times, Times New Roman, times-roman, georgia, serif;
-  color: red;
-  font-weight: bold;
-}
-/*****************************************
-
 TEAM SECTION
 
 ****************************************/
@@ -277,6 +279,16 @@ TEAM SECTION
   height: 160vh;
   width: 100%;
   /*border: 3px solid black;*/
+}
+.tem_text{
+  margin: 10px 0 10px 0;
+}
+.team_text h3{
+  text-align: left;
+  color:rgb(65, 65, 65);
+  font-family: 'Raleway', sans-serif!important;
+  font-weight: 900;
+  font-size: 1.4rem !important;
 }
 .team_one{
   height: 80vh;
@@ -292,47 +304,116 @@ TEAM SECTION
   height: 100%;
 }
 .team h3{
-  font-size: 2rem;
-  font-weight: bolder;
-  font-family: 'PT Sans', sans-serif;
-
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(52, 49, 54);
 }
 .team small{
-  font-size: 1.5rem;
-  font-weight: normal;
-  font-family: 'Inconsolata','Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(62, 69, 80);
 }
 .team p{
   font-size: 1rem;
   font-weight: normal;
   font-family: 'Inconsolata','Roboto', sans-serif;
+
+  transition: all .2s ease;
 }
 .person_image{
   height: 50vh;
-
+  text-align: center;
 }
 .gian{
-  background-image: url(../assets/teamimages/gian.png);
+  background-image: url(../assets/teamimages/gian.jpg);
   background-size: cover;
+  transition: all .2s ease;
 }
 .victor{
   background-image: url(../assets/teamimages/victor.jpg);
   background-size: cover;
+  transition: all .2s ease;
 }
 /*.victor:hover .fa-twitter{display: block;}*/
 .bill{
   background-image: url(../assets/teamimages/bill.jpg);
   background-size: cover;
+  transition: all .2s ease;
 }
 .martin{
   background-image: url(../assets/teamimages/martin.jpg);
   background-size: cover;
+  transition: all .2s ease;
 }
 .maureen{
   background-image: url(../assets/teamimages/maureen.jpg);
   background-size: cover;
+  transition: all .2s ease;
 }
 .job{
   background-image: url(../assets/teamimages/job.jpg);
   background-size: cover;
+  transition: all .2s ease;
+}
+.links{
+  padding-top: 100px;
+}
+.links > li{
+  display: none;
+  text-decoration: none;
+  padding: 15px;
+  /*position: absolute;*/
+
+
+}
+.links > li >i{
+  color: white;
+}
+/**********team hover effects*********************/
+.gian:hover{
+  background-image:
+  linear-gradient(
+    rgba(0, 0, 0, 0.5),
+   rgba(0, 0, 0, 0.5)
+   ), url(../assets/teamimages/gian.jpg);
+}
+.victor:hover{
+  background-image:
+  linear-gradient(
+    rgba(0, 0, 0, 0.5),
+   rgba(0, 0, 0, 0.5)
+   ), url(../assets/teamimages/victor.jpg);
+}
+.bill:hover{
+  background-image:
+  linear-gradient(
+    rgba(0, 0, 0, 0.5),
+   rgba(0, 0, 0, 0.5)
+   ), url(../assets/teamimages/bill.jpg);
+}
+.martin:hover{
+  background-image:
+  linear-gradient(
+    rgba(0, 0, 0, 0.5),
+   rgba(0, 0, 0, 0.5)
+   ), url(../assets/teamimages/martin.jpg);
+}
+.maureen:hover{
+  background-image:
+  linear-gradient(
+    rgba(0, 0, 0, 0.5),
+   rgba(0, 0, 0, 0.5)
+   ), url(../assets/teamimages/maureen.jpg);
+}
+.job:hover{
+  background-image:
+  linear-gradient(
+    rgba(0, 0, 0, 0.5),
+   rgba(0, 0, 0, 0.5)
+   ), url(../assets/teamimages/job.jpg);
+}
+.person_image:hover .links > li{
+  display: inline-block;
 }
