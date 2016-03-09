@@ -1,20 +1,144 @@
-.nairobicity{
-	height: 60vh;
-  	width: 100%;
-  	background: 
-  	url(../assets/img/sunset.jpg);
-  	background-size: cover;
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+
 }
-.timer{
-	width: 100%;
+body{
+overflow-y: scroll;
+overflow-x: hidden;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+display: block;
+}
+*:focus {
+    outline: none;
+}
+/***********************************
+
+header
+
+************************************/
+.nairobicity{
+	height: 80vh;
+  width: 100%;
+  background:
+	linear-gradient(
+    rgba(0, 0, 0, 0.5),
+   rgba(0, 0, 0, 0.5)
+   ),url(../assets/img/nairobisunset.jpg);
+  background-size: cover;
+	margin-bottom: 50px;
+}
+.cont_header{
+	/*width: 100%;*/
 	padding-top: 100px;
 }
-.timer h5{
-	color: white;
-	font-size: 3rem;
-	font-weight: normal;
-	font-family: "Circular Std Book",sans-serif;
+.cont_text h1{
+	font-size: 4rem;
+  font-weight: 300;
+	color:white;
+  font-family: 'Raleway', sans-serif;
 }
-.timer hr{
-	width: 100%;
+.cont_text p{
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	font-size: 1.4rem;
+}
+
+/***********************************
+
+contact us form
+
+************************************/
+.myForm input, textarea {
+    background-color:transparent;
+    border: none;
+		height: 80px;
+}
+.button{
+	/*background-color:blue!important;*/
+	border-radius: 25px;
+  border: 1px solid #292c2f!important;
+	max-width: 100%;
+  height: 55px;
+  width: 200px;
+}
+.button::-value{
+	font-size: 40px
+}
+
+.myForm h5{
+	text-align: center;
+	color: rgb(21, 22, 21);
+	font-family: 'Raleway', sans-serif;
+	font-weight: bolder;
+	font-size: 1.3rem;
+}
+.myForm hr{
+	width: 40%;
+}
+/*style for the place holders on all browsers*/
+input,
+input::-webkit-input-placeholder {
+   font-family: times, Times New Roman, times-roman, georgia, serif;
+   color: #444;
+	 font-size: 20px;
+	 line-height: 2;
+	 font-weight: bold;
+
+}
+input,
+input::-moz-placeholder { /* Firefox 18- */
+	font-family: times, Times New Roman, times-roman, georgia, serif;
+	color: #444;
+	font-size: 20px;
+	line-height: 2;
+	font-weight: bold;
+
+}
+input,
+input::-moz-placeholder {  /* Firefox 19+ */
+	font-family: times, Times New Roman, times-roman, georgia, serif;
+	color: #444;
+	font-size: 20px;
+	line-height: 2;
+	font-weight: bold;
+
+}
+input,
+input::-ms-input-placeholder {
+	font-family: times, Times New Roman, times-roman, georgia, serif;
+	color: #444;
+	font-size: 20px;
+	line-height: 2;
+	font-weight: bold;
+
+}
+textarea,
+textarea::-webkit-input-placeholder {
+   font-family: times, Times New Roman, times-roman, georgia, serif;
+   color: #444;
+	 font-size: 20px;
+	 line-height: 2;
+	 font-weight: bold;
+ }
+ input,
+ input::-webkit-input-value {
+  font-family: times, Times New Roman, times-roman, georgia, serif!important;
+  color: #444!important;
+ 	font-size: 20px!important;
+ 	line-height: 2!important;
+ 	font-weight: bold!important;
 }
