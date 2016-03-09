@@ -279,6 +279,7 @@ TEAM SECTION
   height: 160vh;
   width: 100%;
   /*border: 3px solid black;*/
+  margin-bottom: 40px;
 }
 .tem_text{
   margin: 10px 0 10px 0;
@@ -293,7 +294,7 @@ TEAM SECTION
 .team_one{
   height: 80vh;
   width: 100%;
-
+  margin-bottom: 40px;
 }
 .team_two{
   height: 80vh;
@@ -417,3 +418,9 @@ TEAM SECTION
 .person_image:hover .links > li{
   display: inline-block;
 }
+
+/*****************************************
+
+FOOTER SECTION
+
+****************************************/
