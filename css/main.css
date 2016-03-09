@@ -9,15 +9,13 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
- 
+
 }
 body{
    overflow-y: scroll;
   overflow-x: hidden;
 }
-.row{
-  margin: 0 !important;
-}
+
 /* HTML5 display-role reset for older browsers */
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -44,27 +42,251 @@ HEADER SECTION
 .header{
   height: 100vh;
   width: 100%;
-  background: 
-  url(../assets/img/imagetab.jpg);
+  background:
+  linear-gradient(
+      rgba(12, 12, 13, 0.64),
+    rgba(12, 12, 13, 0.64)
+
+  ),
+  /* bottom, image */
+  url(../assets/img/intro1.png);
   background-size: cover;
 }
 .intro_name{
-  margin-top: 20%;
-  margin-bottom: 2%;
+  margin-top: 8%;
+
 }
 .intro_name h1{
-  font-size: 19pt;
-  font-weight: bolder;
-  text-align: center;
-  color:black;
-  font-family: 'Inconsolata','Roboto', sans-serif;
-}
-.intro_text h4{
-  color: black;
-  font-size: 15pt;
-  font-weight: 100;
-  font-family: 'Inconsolata','Roboto', sans-serif;
+  font-size: 4rem;
+  font-weight: 300;
+
+  color:white;
+  font-family: 'Raleway', sans-serif;
 }
 .redtext{
   color: red;
+}
+.project{
+  /*border: 2px solid black;*/
+}
+.btn{
+  display: inline-block;
+  margin-left: 10px;
+  max-width: 100%;
+  height: 55px;
+  width: 200px;
+  text-align: center;
+  border-radius: 25px;
+  border: 1px solid #688009;
+  transition: all .2s ease;
+}
+.btn:hover{
+  background-color: rgb(113, 176, 22);
+}
+.btn a{
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  font-size: 2.2rem;
+  margin-top: 5px;
+
+}
+.project h3{
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  display: inline-block;
+
+}
+
+
+/*****************************************
+
+services SECTION
+
+****************************************/
+.services{
+  height: 100vh;
+}
+.services h3{
+  text-align: center;
+  color:rgb(65, 65, 65);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  font-size: 1.4rem;
+}
+.services hr{
+  width: 20%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.services h1{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+.web_mobi{
+  height: 80vh;
+}
+.web_mobi h1{
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(52, 49, 54);
+}
+.web_mobi p{
+  font-weight: 300;
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(62, 69, 80);
+}
+.web{
+  height: 40vh;
+  /*border: 2px solid black;*/
+  transition: border-color 300ms;
+  border: 1px solid transparent;
+}
+.webimage{
+  margin: 10px 0 10px 0;
+  height: 40vh;
+  /*border: 1px solid yellow;*/
+  background-image: url(../assets/img/webdesign2.jpg);
+  background-size: contain;
+}
+.mobile{
+  height: 40vh;
+  /*border: 2px solid black;*/
+
+}
+.mobileimage{
+  margin: 10px 0 10px 0;
+  height: 40vh;
+  /*border: 1px solid yellow;*/
+  background-image: url(../assets/img/mobiledev.png);
+  background-size: contain;
+}
+.ui_ux{
+  height: 40vh;
+  /*border: 2px solid black;*/
+}
+.uximage{
+  margin: 10px 0 10px 0;
+  height: 40vh;
+  /*border: 1px solid yellow;*/
+  background-image: url(../assets/img/uxdesign.jpg);
+  background-size: contain;
+}
+
+.bottomdiv{
+  height: 2vh;
+  width: 100%;
+  background-color:rgb(113, 176, 22);
+  transition: all .2s ease;
+}
+.bottomdiv p {
+  font-weight: lighter;
+  font-size: 2rem;
+  font-family: 'Indie Flower', cursive;
+  padding-top: 20px;
+  padding-left: 5px;
+  color: white;
+  display: none;
+}
+.web:hover{
+  border-color:rgb(113, 176, 22);
+}
+.web:hover .bottomdiv{
+  height: 15vh;
+}
+.web:hover .bottomdiv p{
+  display: block;
+}
+
+.mobile:hover{
+  border: 1px solid rgb(113, 176, 22);
+}
+.mobile:hover .bottomdiv{
+  height: 15vh;
+}
+.mobile:hover .bottomdiv p{
+  display: block;
+}
+
+.ui_ux:hover{
+  border: 1px solid rgb(113, 176, 22);
+}
+.ui_ux:hover .bottomdiv{
+  height: 15vh;
+}
+.ui_ux:hover .bottomdiv p{
+  display: block;
+}
+/*****************************************
+
+TEAM SECTION
+
+****************************************/
+.team{
+  height: 160vh;
+  width: 100%;
+  /*border: 3px solid black;*/
+}
+.team_one{
+  height: 80vh;
+  width: 100%;
+
+}
+.team_two{
+  height: 80vh;
+  width: 100%;
+}
+.large-4{
+  /*border: 3px solid black;*/
+  height: 100%;
+}
+.team h3{
+  font-size: 2rem;
+  font-weight: bolder;
+  font-family: 'PT Sans', sans-serif;
+
+}
+.team small{
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-family: 'Inconsolata','Roboto', sans-serif;
+}
+.team p{
+  font-size: 1rem;
+  font-weight: normal;
+  font-family: 'Inconsolata','Roboto', sans-serif;
+}
+.person_image{
+  height: 50vh;
+
+}
+.gian{
+  background-image: url(../assets/teamimages/gian.png);
+  background-size: cover;
+}
+.victor{
+  background-image: url(../assets/teamimages/victor.jpg);
+  background-size: cover;
+}
+/*.victor:hover .fa-twitter{display: block;}*/
+.bill{
+  background-image: url(../assets/teamimages/bill.jpg);
+  background-size: cover;
+}
+.martin{
+  background-image: url(../assets/teamimages/martin.jpg);
+  background-size: cover;
+}
+.maureen{
+  background-image: url(../assets/teamimages/maureen.jpg);
+  background-size: cover;
+}
+.job{
+  background-image: url(../assets/teamimages/job.jpg);
+  background-size: cover;
 }
