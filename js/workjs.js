@@ -16,27 +16,32 @@ $(function() {
     });
 
   $(".menu #menu-open").click(function() {
+    $(".page-overlay").show();
     $("#menu-close").show();
     $(".menu-right").show().animate({
       width: "350px"
     }, 500);
-    $('body').css("opacity","0.4");
-    $(".page-overlay").show();
   });
   var closeMenu = function(){
+    $(".page-overlay").hide();
     $("#menu-close").css("display","none");
     $(".menu-right").animate({
       width: "0",
       display: "none"
     }, 500);
-    $('body').css("opacity","1");
-    $(".page-overlay").hide();
   }
 
   $("#menu-close").click(function() {
     closeMenu();
   });
-  // $('html').on('click', function(){
-  //   closeMenu();
-  // });
+
+  $(".page-overlay").click(function(){
+    $(".page-overlay").hide();
+    $("#menu-close").css("display","none");
+    $(".menu-right").animate({
+      width: "0",
+      display: "none"
+    }, 500);
+  });
+
 });
