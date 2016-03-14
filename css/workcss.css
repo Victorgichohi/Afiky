@@ -2,18 +2,11 @@ body{
   position: absolute;
   font-size: 200%;
   font-weight: 200;
-  background: #f1f8e9;
+  background: #fff3e0;
   color: #424242;
   font-family: 'Quicksand', sans-serif;
   z-index: -10;
 }
-.logo-left{
-  float: left;
-  right: 0;
-  height: 90px;
-  width: 200px;
-}
-
 .page-overlay{
   position: fixed;
   display: none;
@@ -24,6 +17,13 @@ body{
   background-color: #000;
   opacity: 0.5;
 }
+/*NAV AND SIDE MENU*/
+.logo-left{
+  float: left;
+  right: 0;
+  height: 90px;
+  width: 200px;
+}
 
 .menu{
   position: relative;
@@ -33,35 +33,44 @@ body{
 }
 
 .menu .fa-bars{
-  padding-top: 32%;
-  font-size: 28px;
+  padding-top: 10%;
+  font-size: 32px;
   font-weight: 100;
-  width: 25%;
+  width: 20%;
 }
 
 .menu-right{
   position: fixed;
   display: none;
   float: right;
+  border-left: 1px solid #fff;
   width: 0;
   height:100%;
   right: 0;
   z-index: 10000;
-  background: #000;
-  color: #fff;
+  background: #fafafa;
+  color: #000;
 }
-
-.menu-right .title-menu{
-  padding-top: 6%;
-  padding-left: 6%;
+.menu-right ul>li{
   font-size: 22px;
+}
+.menu-right .title-menu img{
+  margin-top: 26px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  float: left;
+  margin-left:1%;
+  height: auto;
+  width: 100px;
 }
 
 .menu-right #menu-close{
-  padding-top: 22%;
-  padding-left: 80%;
-  text-align: right;
-  font-weight: normal;
+  margin-top: 26px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  float: right;
+  font-weight: bold;
+  margin-right: 8%;
   font-size: 32px;
 }
 
@@ -77,9 +86,66 @@ body{
   position: relative;
   min-width: 100%;
 }
+.menu-right .contact-us{
+  text-align: center;
+  display: block;
+  margin-left: 12%;
+}
+.menu-right .contact-us ul>li{
+  list-style: none;
+  display: inline;
+  margin-right: 22%;
+}
+
 .fat-line{
   border-bottom: 2px solid #424242;;
 }
+/*media query for the menu*/
+@media(max-widt: 1280px){}
+@media(max-width: 800px){
+
+}
+@media(max-width: 360px){
+  .logo-left img{
+    height: 100px;
+    width: 100px;
+  }
+
+  .menu .fa-bars{
+    font-size: 22px;
+    font-weight: 100;
+    width: 20%;
+  }
+
+  .menu #menu-open{
+    font-size: 22px;
+  }
+  .menu-right{
+    font-size: 22px;
+  }
+
+}
+
+@media(max-width: 320px){
+  .logo-left img{
+    margin-top: 20px;
+    height: 50px;
+    width: auto;
+  }
+  .menu .fa-bars{
+    font-size: 16px;
+    font-weight: 100;
+    width: 20%;
+  }
+  .menu #menu-open{
+    font-size: 16px;
+  }
+  .menu-right{
+    font-size: 22px;
+  }
+
+}
+/*END OF NAV AND SIDE MENU*/
 .card {
   position: relative;
   overflow: hidden;
@@ -126,12 +192,22 @@ a {
 }
 .row p{
   display: block;
-  font-size: 32px;
+  font-size: 38px;
   margin: 12px;
 }
 /*media queries*/
 /*when screen size is above 1280px*/
 @media (max-width:1280px) {
+  .row .work-title{
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: 200%;
+    border-bottom: 5px solid #424242;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-bottom: 32px;
+  }
   .card .title {
     position: relative;
     font-weight: 100;
@@ -146,22 +222,13 @@ a {
     position: relative;
     color: #fff;
     font-size: 40px;
+    bottom: auto;
   }
   .card .content .line {
     position: absolute;
     border-bottom: 1px solid #fff;
     left: 22%;
     right: 22%;
-  }
-  .row .work-title{
-    position: relative;
-    display: block;
-    text-align: center;
-    font-size: 200%;
-    border-bottom: 5px solid #424242;
-    margin-left: 40%;
-    margin-right: 40%;
-    margin-bottom: 32px;
   }
   .row p{
     position: relative;
@@ -188,6 +255,7 @@ a {
     position: relative;
     color: #fff;
     font-size: 36px;
+    bottom: auto;
   }
   .card .content .line {
     position: absolute;
@@ -200,7 +268,7 @@ a {
     position: relative;
     display: block;
     text-align: center;
-    font-size: 150%;
+    font-size: 66px;
     border-bottom: 5px solid #424242;
     margin-left: 30%;
     margin-right: 30%;
@@ -210,7 +278,7 @@ a {
     position: relative;
     display: block;
     font-size: 100%;
-    font-size: 32px;
+    font-size: 28px;
     margin: 12px;
 
   }
@@ -244,12 +312,12 @@ a {
     color: #fff;
     font-size:34px;
     font-weight: 100;
-    bottom: 20px;
+    bottom: auto;
   }
   .row .work-title{
     position: relative;
     display: block;
-    font-size: 75%;
+    font-size: 34px;
     border-bottom: 5px solid #424242;
     margin-left: 30%;
     margin-right: 30%;
@@ -260,7 +328,7 @@ a {
     display: block;
     text-align: center;
     font-size: 70%;
-    font-size: 32px;
+    font-size: 22px;
     margin: 12px;
   }
 }
@@ -292,17 +360,12 @@ a {
     color: #fff;
     font-size:32px;
     font-weight: 100;
-    bottom: 20px;
-  }
-  .work-title{
-    text-align: center;
-    font-weight: 100;
-    font-size: 100%;
+    bottom: auto;
   }
   .row .work-title{
     position: relative;
     display: block;
-    font-size: 70%;
+    font-size: 32px;
     border-bottom: 5px solid #424242;
     margin-left: 30%;
     margin-right: 30%;
@@ -313,7 +376,7 @@ a {
     display: block;
     text-align: center;
     font-size: 65%;
-    font-size: 32px;
+    font-size: 22px;
     margin: 12px;
   }
 }

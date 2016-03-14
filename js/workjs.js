@@ -13,22 +13,25 @@ $(function() {
         height: "0px",
       }, 300).hide();
       $(this).find(".image-overlay").hide();
-    });
+   });
 
   $(".menu #menu-open").click(function() {
+    $('body').css("overflow-y","hidden");
     $(".page-overlay").show();
     $("#menu-close").show();
     $(".menu-right").show().animate({
-      width: "350px"
-    }, 500);
+      width: "300px"
+    }, 100);
   });
+
   var closeMenu = function(){
     $(".page-overlay").hide();
+    $('body').css("overflow-y","auto");
     $("#menu-close").css("display","none");
     $(".menu-right").animate({
       width: "0",
       display: "none"
-    }, 500);
+    }, 100);
   }
 
   $("#menu-close").click(function() {
@@ -36,12 +39,14 @@ $(function() {
   });
 
   $(".page-overlay").click(function(){
-    $(".page-overlay").hide();
-    $("#menu-close").css("display","none");
-    $(".menu-right").animate({
-      width: "0",
-      display: "none"
-    }, 500);
+    closeMenu();
+    // $('body').css("overflow-y","hidden");
+    // $(".page-overlay").hide();
+    // $("#menu-close").css("display","none");
+    // $(".menu-right").animate({
+    //   width: "0",
+    //   display: "none"
+    // }, 500);
   });
 
 });
