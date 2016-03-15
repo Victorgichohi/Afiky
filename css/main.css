@@ -28,9 +28,12 @@ Afiki Logo
 ****************************************/
 #logo {
     position: fixed;
+    height: 90px;
     top: 0px;
     left: 0px;
     z-index: 100;
+    background-image: url(../assets/img/logo.jpg);
+    background-size: cover;
 }
 
 /*****************************************
@@ -43,13 +46,7 @@ HEADER SECTION
   height: 100vh;
   width: 100%;
   background:
-  linear-gradient(
-      rgba(12, 12, 13, 0.64),
-    rgba(12, 12, 13, 0.64)
-
-  ),
-  /* bottom, image */
-  url(../assets/img/intro1.png);
+  url(../assets/img/imagetab.jpg);
   background-size: cover;
 }
 .intro_name{
@@ -59,8 +56,7 @@ HEADER SECTION
 .intro_name h1{
   font-size: 4rem;
   font-weight: 300;
-
-  color:white;
+  color:rgb(65, 65, 65);
   font-family: 'Raleway', sans-serif;
 }
 .redtext{
@@ -84,7 +80,7 @@ HEADER SECTION
   background-color: rgb(113, 176, 22);
 }
 .btn a{
-  color: white;
+  color:rgb(65, 65, 65);
   font-family: 'Raleway', sans-serif;
   font-weight: 900;
   font-size: 2.2rem;
@@ -92,7 +88,7 @@ HEADER SECTION
 
 }
 .project h3{
-  color: white;
+  color:rgb(65, 65, 65);
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
   font-size: 1.4rem;
@@ -105,11 +101,8 @@ HEADER SECTION
 About Us SECTION
 
 ****************************************/
-.about{
-  height: 100vh;
 
-}
-.about_text{
+/*.about_text{
   margin: 10px 0 20px 0;
   padding: 0px;
 }
@@ -148,7 +141,10 @@ About Us SECTION
   color: red;
   font-weight: bold;
 }
-
+*/
+.about{
+  height: 100vh;
+}
 /*****************************************
 
 services SECTION
