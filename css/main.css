@@ -151,7 +151,9 @@ About Us SECTION
        padding: 8em 0;
    }
     .about-content {
-	transform: skew(0deg,-6deg);   
+	transform: skew(0deg,-6deg);
+    font-size: 1.4em;
+    color: #fefefe;   
    }
 /*****************************************
 
