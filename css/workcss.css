@@ -7,6 +7,15 @@ body{
   font-family: 'Quicksand', sans-serif;
   z-index: -10;
 }
+/*menu and nav*/
+.nav-bar-custom{
+  background-color: #fff;
+  opacity: 0.8;
+  z-index: 10000;
+  position: fixed;
+  min-width: 100%;
+  height: auto;
+}
 .page-overlay{
   position: fixed;
   display: none;
@@ -96,7 +105,7 @@ body{
   display: inline;
   margin-right: 22%;
 }
-
+/*end of menu and Nanv*/
 .fat-line{
   border-bottom: 2px solid #424242;;
 }
@@ -128,7 +137,7 @@ body{
 
 @media(max-width: 320px){
   .logo-left img{
-    margin-top: 20px;
+    margin-top: px;
     height: 50px;
     width: auto;
   }
@@ -146,6 +155,12 @@ body{
 
 }
 /*END OF NAV AND SIDE MENU*/
+#work{
+  position: relative;
+  margin-top: 10%;
+  width: auto;
+  height: auto;
+}
 .card {
   position: relative;
   overflow: hidden;
