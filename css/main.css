@@ -144,7 +144,15 @@ About Us SECTION
 */
 .about{
   height: 100vh;
+    background-color: #292c2f;
 }
+   .about-bg-skewed {
+       transform: skew(0deg,6deg);
+       padding: 8em 0;
+   }
+    .about-content {
+	transform: skew(0deg,-6deg);   
+   }
 /*****************************************
 
 services SECTION
