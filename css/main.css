@@ -101,20 +101,44 @@ HEADER SECTION
 About Us SECTION
 
 ****************************************/
-.about_us{
-  height: 100vh;
-}
-.about_text{
-  margin: 10px 0 10px 0;
-}
 .about_text h3{
   text-align: left;
-  color:rgb(65, 65, 65);
-  font-family: 'Raleway', sans-serif;
+  color:rgb(240, 246, 241)!important;
+  font-family: 'Raleway', sans-serif!important;
   font-weight: 900;
-  font-size: 1.4rem;
+  font-size: 1.4rem !important;
 }
 
+.about{
+  height: 80vh;
+    background-color: #292c2f;
+}
+   .about-bg-skewed {
+       transform: skew(0deg,5deg);
+       padding: 8em 0;
+   }
+    .about-content {
+	transform: skew(0deg,-5deg);
+    font-size: 1.4em;
+    color: #fefefe;
+   }
+.about_us_text{
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+@media only screen and (min-width: 40.063em) {
+    .about_us_text{
+      /*font-size: 16px;*/
+    }
+   } /* min-width 641px, medium screens */
+@media only screen and (max-width: 40em) {
+  .about{
+    height: 100vh;
+  }
+  .about_us_text{
+    font-size: 16px;
+  }
+}
 /*****************************************
 
 services SECTION
